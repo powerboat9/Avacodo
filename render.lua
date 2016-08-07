@@ -1,5 +1,5 @@
 function getRender(nTerm)
-    local ret = {data = {}}
+    local ret = {data = {}, term = nTerm, blockData = {}}
     ret.sizeX, ret.sizeY = nTerm.getSize()
     function ret:isSpotTaken(x, y)
         return self.data[y][x].id == 0
